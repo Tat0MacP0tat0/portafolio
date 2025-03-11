@@ -1,0 +1,92 @@
+.color-negro
+{
+    background-color: #000;
+    color: white;
+}
+
+.color-cafe
+{
+    background-color: #704615;
+    color: white;
+}
+
+.color-rojo
+{
+    background-color: red;
+}
+
+.color-naranja
+{
+    background-color: orange;
+}
+
+.color-amarillo
+{
+    background-color: yellow;
+}
+
+.color-verde
+{
+    background-color: green;
+}
+
+.color-azul
+{
+    background-color: blue;
+}
+
+.color-violeta
+{
+    background-color: violet;
+}
+
+.color-gris
+{
+    background-color: grey;
+}
+
+.color-blanco
+{
+    background-color: white;
+}
+
+.color-dorado
+{
+    background-color: goldenrod;
+}
+
+.color-plata
+{
+    background-color: silver;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(fondo.avif);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+h1
+{
+    color: #ecf3ad;
+}
+
+select
+{
+    width: 200px;
+    height: 5vh;
+}
+
+#resistencia
+{
+    width: 350px;
+    height: 8vh;
+    font-size: 5vh;
+}
