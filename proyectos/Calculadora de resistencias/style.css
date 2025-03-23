@@ -1,0 +1,108 @@
+/* Colores de los select */
+.color-negro { background-color: #000; color: white; }
+.color-cafe { background-color: #704615; color: white; }
+.color-rojo { background-color: red; color: white; }
+.color-naranja { background-color: orange; color: black; }
+.color-amarillo { background-color: yellow; color: black; }
+.color-verde { background-color: green; color: white; }
+.color-azul { background-color: blue; color: white; }
+.color-violeta { background-color: violet; color: black; }
+.color-gris { background-color: grey; color: white; }
+.color-blanco { background-color: white; color: black; }
+.color-dorado { background-color: goldenrod; color: black; }
+.color-plata { background-color: silver; color: black; }
+
+/* Estilos generales */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: url(fondo.avif) no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Título */
+h1 {
+    color: #ecf3ad;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+/* Contenedor flexible */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+}
+
+/* Selectores */
+select {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+/* Botón */
+#enviar {
+    width: 100%;
+    max-width: 250px;
+    padding: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Efecto hover en botón */
+#enviar:hover {
+    background-color: #2980b9;
+}
+
+/* Resultado */
+#resistencia {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    background-color: white;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    select {
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+
+    #enviar {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    #resistencia {
+        font-size: 1.2rem;
+    }
+}

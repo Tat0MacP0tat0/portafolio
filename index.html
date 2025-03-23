@@ -1,73 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>RESISTENCIAS</title>
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 </head>
 <body>
     <header>
-        <h1>CUANTO MIDE TU RESISTENCIA</h1>
+        <h1>Portafolio de Erick Arizon Maldonado Choqque</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <img src="resistencia.png" alt="">
+    
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy un estudiante de Ingeniería de Sistemas con pasión por el Data Science y el desarrollo web.</p>
     </section>
-    <section>
-        <div class="container">
-            <form action="">
-                <select name="color1" id="color-selecionado1">
-                    <option value="negro" class="color-negro">negro</option>
-                    <option value="cafe" class="color-cafe">cafe</option>
-                    <option value="rojo" class="color-rojo">rojo</option>
-                    <option value="naranja" class="color-naranja">naranja</option>
-                    <option value="amarillo" class="color-amarillo">amarillo</option>
-                    <option value="verde" class="color-verde">verde</option>
-                    <option value="azul" class="color-azul">azul</option>
-                    <option value="violeta" class="color-violeta">violeta</option>
-                    <option value="gris" class="color-gris">gris</option>
-                    <option value="blanco" class="color-blanco">blanco</option>
-                </select>
-
-                <select name="color2" id="color-selecionado2">
-                    <option value="negro" class="color-negro">negro</option>
-                    <option value="cafe" class="color-cafe">cafe</option>
-                    <option value="rojo" class="color-rojo">rojo</option>
-                    <option value="naranja" class="color-naranja">naranja</option>
-                    <option value="amarillo" class="color-amarillo">amarillo</option>
-                    <option value="verde" class="color-verde">verde</option>
-                    <option value="azul" class="color-azul">azul</option>
-                    <option value="violeta" class="color-violeta">violeta</option>
-                    <option value="gris" class="color-gris">gris</option>
-                    <option value="blanco" class="color-blanco">blanco</option>
-                </select>
-
-                <select name="color3" id="color-selecionado3">
-                    <option value="negro" class="color-negro">negro</option>
-                    <option value="cafe" class="color-cafe">cafe</option>
-                    <option value="rojo" class="color-rojo">rojo</option>
-                    <option value="naranja" class="color-naranja">naranja</option>
-                    <option value="amarillo" class="color-amarillo">amarillo</option>
-                    <option value="verde" class="color-verde">verde</option>
-                    <option value="azul" class="color-azul">azul</option>
-                    <option value="violeta" class="color-violeta">violeta</option>
-                    <option value="gris" class="color-gris">gris</option>
-                    <option value="blanco" class="color-blanco">blanco</option>
-                </select>
-
-                <select name="color4" id="color-selecionado4">
-                    <option value="rojo" class="color-rojo">rojo</option>
-                    <option value="dorado" class="color-dorado">dorado</option>
-                    <option value="plata" class="color-plata">plata</option>
-                </select>
-                <input type="button" value="ver resistencia" id="enviar" onclick="calcular()">
-            </form>
+    
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="ecommerce.jpg" alt="E-commerce">
+                <h3>E-commerce con CodeIgniter</h3>
+                <p>Desarrollo de un pequeño e-commerce con CRUD en PHP y CodeIgniter.</p>
+                <a href="#">Ver Proyecto</a>
+            </div>
+            <div class="project">
+                <img src="proyectos/Imagenes de los proyectos/YAN KEN PO.PNG" alt="Juego">
+                <h3>Juego Piedra, Papel y Tijera</h3>
+                <p>Juego en Python y Navegador aplicando lógica matemática.</p>
+                <a href="proyectos/YAN KEN PO/index.html">Ver Proyecto en navegador</a>
+                <a href="https://colab.research.google.com/drive/1yR1j6RMJp3-gz5QBWafPmaCSsetcmtyE?usp=sharing">Ver Proyecto en python</a>
+            </div>
+            <div class="project">
+                <img src="proyectos/Imagenes de los proyectos/calculadora de resitencias.PNG" alt="Calculadora">
+                <h3>Calculadora de Resistencia</h3>
+                <p>Aplicación web con HTML, CSS y JavaScript para calcular resistencias.</p>
+                <a href="proyectos/Calculadora de resistencias/index.html">Ver Proyecto</a>
+            </div>
+            <div class="project">
+                <img src="dashboard.jpg" alt="Dashboard">
+                <h3>Dashboards COVID-19</h3>
+                <p>Visualización de datos del INEI usando Power BI.</p>
+                <a href="#">Ver Proyecto</a>
+            </div>
         </div>
     </section>
-    <section>
-        <input type="text" name="" id="resistencia">
+    
+    <section id="contact">
+        <h2>Contacto</h2>
+        <div class="contact-icons">
+            <a href="mailto:tuemail@example.com"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
     </section>
-
-    <script src="script.js"></script>
+    
+    <footer>
+        <p>&copy; 2025 - Mi Portafolio</p>
+    </footer>
 </body>
 </html>

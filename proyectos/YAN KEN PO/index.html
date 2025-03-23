@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Piedra, Papel o Tijera</title>
+</head>
+<body>
+    <header>
+        <h1>¡Juega Piedra, Papel o Tijera!</h1>
+    </header>
+    
+    <main>
+        <section class="game-container">
+            <h2>Elige tu opción:</h2>
+            <div class="game-form">
+                <div class="container-button">
+                    <button type="button" class="btn-option" id="boton0">
+                        <img src="https://images.vexels.com/media/users/3/145874/isolated/preview/b55eccb8fb67c9fd017e5df9f47cab3e-roca-de-piedra.png" alt="Piedra">
+                    </button>
+                    <button type="button" class="btn-option" id="boton1">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/012/805/621/small/torn-paper-vintage-sticker-with-space-area-free-png.png" alt="Papel">
+                    </button>
+                    <button type="button" class="btn-option"  id="boton2">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/036/397/001/small/multipurpose-scissors-with-orange-handle-isolated-with-clipping-path-in-file-format-png.png" alt="Tijera">
+                    </button>
+                </div>
+                <button type="button" id="botonJugar" onclick="jugar()">Jugar</button>
+            </div>
+            <textarea id="respuesta" placeholder="Resultado..." readonly></textarea>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
